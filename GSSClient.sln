@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36212.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSSClient", "src\GSSClient\GSSClient.csproj", "{5672A437-59A4-4763-A144-1BE4CBBB6AE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSSClient.Domain", "src\GSSClient.Domain\GSSClient.Domain.csproj", "{957EB208-D7D5-4F13-81F6-82939370385C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5672A437-59A4-4763-A144-1BE4CBBB6AE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5672A437-59A4-4763-A144-1BE4CBBB6AE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5672A437-59A4-4763-A144-1BE4CBBB6AE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{957EB208-D7D5-4F13-81F6-82939370385C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{957EB208-D7D5-4F13-81F6-82939370385C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{957EB208-D7D5-4F13-81F6-82939370385C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{957EB208-D7D5-4F13-81F6-82939370385C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
