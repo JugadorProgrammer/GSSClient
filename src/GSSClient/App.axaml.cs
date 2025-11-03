@@ -1,29 +1,27 @@
 using Avalonia;
-using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
-using GSSClient.ViewModels;
 using GSSClient.Views;
+using Prism.DryIoc;
+using Prism.Ioc;
 
 namespace GSSClient
 {
-    public partial class App : Application
+    public partial class App : PrismApplication
     {
         public override void Initialize()
         {
             AvaloniaXamlLoader.Load(this);
+            base.Initialize();
         }
 
-        public override void OnFrameworkInitializationCompleted()
+        protected override AvaloniaObject CreateShell()
         {
-            if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
-            {
-                desktop.MainWindow = new MainWindow
-                {
-                    DataContext = new MainViewModel(),
-                };
-            }
+            return Container.Resolve<MainWindow>();
+        }
 
-            base.OnFrameworkInitializationCompleted();
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
+        {
+
         }
     }
 }
