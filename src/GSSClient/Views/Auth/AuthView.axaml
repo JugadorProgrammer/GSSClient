@@ -1,0 +1,32 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+			 xmlns:auth="using:GSSClient.ViewModels.Auth"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+			 xmlns:prism="http://prismlibrary.com/"
+			 prism:ViewModelLocator.AutoWireViewModel="True"
+			 xmlns:vm="using:GSSClient.ViewModels.Auth"
+			 x:DataType="vm:AuthViewModel"
+			 x:Class="GSSClient.Views.Auth.AuthView"
+			 x:CompileBindings="True">
+
+	<Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+
+		<Label Grid.Row="0" Content="Auth" HorizontalContentAlignment="Center" HorizontalAlignment="Stretch" />
+		<TextBox Grid.Row="1" Text="{Binding Login}" Watermark="Login" HorizontalAlignment="Stretch"/>
+		<TextBox Grid.Row="2" Text="{Binding Password}" Watermark="Password" HorizontalAlignment="Stretch"/>
+		<Button Grid.Row="3" Content="Login" Command="{Binding LoginCommand}" />
+		<Button Grid.Row="4" Content="SingUp" Command="{Binding SingUpCommand}" />
+		<Label Grid.Row="5" Content="{Binding ErrorMessage}" Foreground="Red"
+			HorizontalContentAlignment="Left" HorizontalAlignment="Stretch" />
+	</Grid>
+</UserControl>

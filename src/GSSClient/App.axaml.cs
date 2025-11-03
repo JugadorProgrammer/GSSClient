@@ -1,6 +1,10 @@
 using Avalonia;
 using Avalonia.Markup.Xaml;
+using GSSClient.Domain.Connection;
+using GSSClient.Infrastructure.Connection;
+using GSSClient.ViewModels.Auth;
 using GSSClient.Views;
+using GSSClient.Views.Auth;
 using Prism.DryIoc;
 using Prism.Ioc;
 
@@ -21,7 +25,8 @@ namespace GSSClient
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-
+            containerRegistry.Register<IAuthService, AuthService>();
+            containerRegistry.RegisterForNavigation<AuthView, AuthViewModel>();
         }
     }
 }
