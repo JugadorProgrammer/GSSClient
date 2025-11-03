@@ -25,5 +25,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GSSClient.Domain\GSSClient.Domain.csproj" />
+    <ProjectReference Include="..\GSSClient.Infrastructure\GSSClient.Infrastructure.csproj" />
   </ItemGroup>
 </Project>

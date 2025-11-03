@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSSClient", "src\GSSClient\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSSClient.Domain", "src\GSSClient.Domain\GSSClient.Domain.csproj", "{957EB208-D7D5-4F13-81F6-82939370385C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GSSClient.Infrastructure", "src\GSSClient.Infrastructure\GSSClient.Infrastructure.csproj", "{503E2B55-634C-450F-9EF1-39537A6F3F37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{957EB208-D7D5-4F13-81F6-82939370385C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{957EB208-D7D5-4F13-81F6-82939370385C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{957EB208-D7D5-4F13-81F6-82939370385C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{503E2B55-634C-450F-9EF1-39537A6F3F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{503E2B55-634C-450F-9EF1-39537A6F3F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{503E2B55-634C-450F-9EF1-39537A6F3F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{503E2B55-634C-450F-9EF1-39537A6F3F37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
